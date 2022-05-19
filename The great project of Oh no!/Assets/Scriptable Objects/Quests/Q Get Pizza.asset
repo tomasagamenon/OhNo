@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8822bd598e98fda438fd0d2fb2ec6caf, type: 3}
+  m_Name: Q Get Pizza
+  m_EditorClassIdentifier: 
+  questName: Get Pizza
+  questDescription: Get a pineapple pizza
+  isActive: 0
+  isVisible: 1
+  visibleInt: -1
+  activeDefault: 1
+  isConsecutive: 1
+  isWon: 1
+  isLost: 0
+  winConditions:
+  - name: Speak
+    description: Speak with that strange, shady man
+    currentAmount: 2
+    targetAmount: 2
+    resetAmount: 0
+    type: 2
+    isActive: 1
+    isComplete: 1
+  - name: Speak2
+    description: Speak with the pizza guy
+    currentAmount: 2
+    targetAmount: 2
+    resetAmount: 0
+    type: 2
+    isActive: 1
+    isComplete: 1
+  - name: Speak3
+    description: Speak with the shady man again
+    currentAmount: 2
+    targetAmount: 2
+    resetAmount: 0
+    type: 2
+    isActive: 1
+    isComplete: 1
+  - name: Run
+    description: Run from the shady man
+    currentAmount: 2
+    targetAmount: 2
+    resetAmount: 0
+    type: 2
+    isActive: 1
+    isComplete: 1
+  loseConditions: []
+  qm: {fileID: 0}

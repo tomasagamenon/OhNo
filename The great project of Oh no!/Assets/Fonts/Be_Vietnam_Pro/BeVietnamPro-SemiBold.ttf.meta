@@ -1,0 +1,36 @@
+fileFormatVersion: 2
+guid: 6ef5ee49cec6f8146a9c053e132dbe93
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Be Vietnam Pro
+  fontNames:
+  - Be Vietnam Pro
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1d8a52e091fffa7439722a26c5ca6acd, type: 3}
+  - {fileID: 12800000, guid: 1b13ac06b1df2a7449f6cf4f8342f023, type: 3}
+  - {fileID: 12800000, guid: 32bfc5977a9bcd14da77f5fa87cd77e9, type: 3}
+  - {fileID: 12800000, guid: 56ee839ac16b96446bd9776799c95fbf, type: 3}
+  - {fileID: 12800000, guid: 13daeacb4d6c37049806054593e2c692, type: 3}
+  - {fileID: 12800000, guid: fcf0b30cc4de3034c8cf69c6baaff9aa, type: 3}
+  - {fileID: 12800000, guid: fc64811c282db8140a06366ed21a097d, type: 3}
+  - {fileID: 12800000, guid: e80c7c3c96e311e4796b1cf99cb08135, type: 3}
+  - {fileID: 12800000, guid: d374decc413371942ac8d6fdf46997ed, type: 3}
+  - {fileID: 12800000, guid: 37332adcc2315c949b2e220518fc5f64, type: 3}
+  - {fileID: 12800000, guid: 70a95e1d4d05edf4a91324ebb8a2a99f, type: 3}
+  - {fileID: 12800000, guid: 3c0dd4aed0306a545a821bb912c1e249, type: 3}
+  - {fileID: 12800000, guid: 08888d0ffcc41b440a54dc518341fb80, type: 3}
+  - {fileID: 12800000, guid: 66e5b76fdb2ee5245abee9f25dacf8b1, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

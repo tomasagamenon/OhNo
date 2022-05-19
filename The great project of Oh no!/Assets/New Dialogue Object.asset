@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 237c6b325ef92ba41b150cae7393163e, type: 3}
+  m_Name: New Dialogue Object
+  m_EditorClassIdentifier: 
+  dialogue:
+  - 'sdakjsfhjasfjsaadasfjkfhasjkncjabsvhbahvc
+
+    hxvahfvbhsdfhsgfhgsahchjavzhvxchvahsvhdvshfd'
+  - 'secsosecsosecsosecsosecsosecsosecsosecso
+
+    secsosecsosecsosecsosecsosecsosecsosecsosecso
+
+    secsosecsosecsosecsosecsosecso'
+  responses:
+  - responseText: Secso
+    dialogueObject: {fileID: 11400000, guid: f28bf21f64e10594aa6ed82096a1dcd7, type: 2}
+  - responseText: :)))))
+    dialogueObject: {fileID: 11400000, guid: faac29284fbd31e4c9c4713bab655d20, type: 2}
+  dialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  objectThatINeed: Amogus
+  isAccesibleRestart: 1
+  isAccesible: 1
