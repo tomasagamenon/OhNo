@@ -8,6 +8,7 @@ public class Menu : MonoBehaviour
     [SerializeField] private GameObject menuInGame = null;
     [SerializeField] private GameObject journal = null;
     [SerializeField] private GameObject settings = null;
+    [SerializeField] private GameObject archievements = null;
 
     private GameObject player;
 
@@ -27,6 +28,8 @@ public class Menu : MonoBehaviour
             {
                 ToggleMenu("MenuInGame", false);
                 ToggleMenu("Settings", false);
+                ToggleMenu("Journal", false);
+                ToggleMenu("Archievements", false);
             }
             else ToggleMenu("MenuInGame", true);
         }
@@ -56,6 +59,8 @@ public class Menu : MonoBehaviour
             menu = menuInGame;
         else if (menuType == "Settings")
             menu = settings;
+        else if (menuType == "Archievements")
+            menu = archievements;
 
         if (!open)
         {

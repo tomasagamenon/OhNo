@@ -31,6 +31,11 @@ public class MainMenu : MonoBehaviour
     public GameObject achievements;
     public List<Button> buttonsAchievements;
 
+    void Start()
+    {
+        foreach(var canvas in playerCanvas)
+            canvas.SetActive(false);
+    }
 
     private void Update()
     {
@@ -40,16 +45,33 @@ public class MainMenu : MonoBehaviour
                 playerCamera.SetActive(true);
                 play.SetActive(false);
                 menuCamera.SetActive(false);
+                foreach (var canvas in playerCanvas)
+                    canvas.SetActive(true);
             }
         if(options.activeSelf)
-            if(directorMenuOptions.duration <= directorMenuOptions.time)
+        {
+            if (directorOptions.duration <= directorAchievements.time)
+            {
+                menuCamera.transform.position = directorOptions.transform.position;
+                menuCamera.transform.rotation = directorOptions.transform.rotation;
+                directorOptions.gameObject.SetActive(false);
+            }
+            if (directorMenuOptions.duration <= directorMenuOptions.time)
             {
                 directorMenuOptions.time = directorMenuOptions.initialTime;
                 directorMenuOptions.gameObject.SetActive(false);
                 options.SetActive(false);
                 GoInMenu();
             }
+        }
         if (achievements.activeSelf)
+        {
+            if (directorAchievements.duration <= directorAchievements.time)
+            {
+                menuCamera.transform.position = directorAchievements.transform.position;
+                menuCamera.transform.rotation = directorAchievements.transform.rotation;
+                directorAchievements.gameObject.SetActive(false);
+            }
             if (directorMenuAchievements.duration <= directorMenuAchievements.time)
             {
                 directorMenuAchievements.time = directorMenuAchievements.initialTime;
@@ -57,14 +79,25 @@ public class MainMenu : MonoBehaviour
                 achievements.SetActive(false);
                 GoInMenu();
             }
+        }
         if (credits.activeSelf)
+        {
+            if(directorCredits.duration <= directorCredits.time)
+            {
+                menuCamera.transform.position = directorCredits.transform.position;
+                menuCamera.transform.rotation = directorCredits.transform.rotation;
+                directorCredits.gameObject.SetActive(false);
+            }
             if (directorMenuCredits.duration <= directorMenuCredits.time)
             {
+                menuCamera.transform.position = directorMenuCredits.transform.position;
+                menuCamera.transform.rotation = directorMenuCredits.transform.rotation;
                 directorMenuCredits.time = directorMenuCredits.initialTime;
                 directorMenuCredits.gameObject.SetActive(false);
                 credits.SetActive(false);
                 GoInMenu();
             }
+        }
     }
 
 
