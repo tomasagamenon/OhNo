@@ -50,7 +50,7 @@ public class MainMenu : MonoBehaviour
             }
         if(options.activeSelf)
         {
-            if (directorOptions.duration <= directorAchievements.time)
+            if (directorOptions.duration <= directorOptions.time)
             {
                 menuCamera.transform.position = directorOptions.transform.position;
                 menuCamera.transform.rotation = directorOptions.transform.rotation;
@@ -58,6 +58,8 @@ public class MainMenu : MonoBehaviour
             }
             if (directorMenuOptions.duration <= directorMenuOptions.time)
             {
+                menuCamera.transform.position = directorMenuOptions.transform.position;
+                menuCamera.transform.rotation = directorMenuOptions.transform.rotation;
                 directorMenuOptions.time = directorMenuOptions.initialTime;
                 directorMenuOptions.gameObject.SetActive(false);
                 options.SetActive(false);
@@ -74,6 +76,8 @@ public class MainMenu : MonoBehaviour
             }
             if (directorMenuAchievements.duration <= directorMenuAchievements.time)
             {
+                menuCamera.transform.position = directorMenuAchievements.transform.position;
+                menuCamera.transform.rotation = directorMenuAchievements.transform.rotation;
                 directorMenuAchievements.time = directorMenuAchievements.initialTime;
                 directorMenuAchievements.gameObject.SetActive(false);
                 achievements.SetActive(false);
