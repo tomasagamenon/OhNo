@@ -12,6 +12,14 @@ public class PlayerCamera : MonoBehaviour
 
     public Settings settings;
 
+    [SerializeField]
+    private float height;
+
+    private void Start()
+    {
+        transform.position = new Vector3(transform.position.x, height, transform.position.z);
+    }
+
     private void Update()
     {
         if(GetComponent<Camera>().fieldOfView != settings.FOV)
