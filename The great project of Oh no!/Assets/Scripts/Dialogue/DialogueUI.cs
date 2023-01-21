@@ -56,7 +56,7 @@ public class DialogueUI : MonoBehaviour
             speaker.GetComponent<Animator>().SetBool("Idle", true);
         }
         player.GetComponentInChildren<PlayerDialogueVisual>().VisualFocus(speaker.transform.position);
-        player.GetComponentInChildren<PlayerCameraDialogueVisual>().VisualFocus(speaker.transform.position);
+        player.GetComponentInChildren<PlayerCameraDialogueVisual>().VisualFocus(speaker.GetComponent<StreetNPC>().face.transform.position);
         Cursor.lockState = CursorLockMode.None;
         textName.text = "<b>" + speaker.name + "</b>";
         for (int i = 0; i <= textName.text.Length; i++)

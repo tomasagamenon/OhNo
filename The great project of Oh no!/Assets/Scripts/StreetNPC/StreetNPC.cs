@@ -26,7 +26,7 @@ public class StreetNPC : MonoBehaviour, IMove
     public float minTimeInShop;
     private float timeInShop;
     List<GameObject> childrens = new List<GameObject>();
-
+    public GameObject face;
     private void Awake()
     {
         if (GameObject.Find("Juanela de las Chozas"))
