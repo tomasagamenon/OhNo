@@ -132,6 +132,7 @@ MonoBehaviour:
   mouseSensitivity: 250
   playerRotate: {fileID: 6243391511241785424}
   settings: {fileID: 0}
+  height: 2
 --- !u!1 &4116958232564345619
 GameObject:
   m_ObjectHideFlags: 0
